@@ -1,0 +1,33 @@
+Assignment of 5th March :
+
+Component Hunt
+
+Youtube is one of the popular websites and its components are broken down in the following hierarchy :
+
+App Shell (The Master Container)
+- Navbar (Search bar, Voice search, User settings)
+- Sidebar (Collapsed or Expanded navigation links)
+- Main Content Area
+- - Video Player Container (The actual player + controls)
+- - Video Info Section (Title, Views, Date)
+- - Channel Action Bar (Avatar, Subscriber count, Join/Sub buttons)
+- - Comment Section (Sort button, Add comment, Comment list)
+- - Recommendation Sidebar (List of "Up Next" video cards)
+
+
+
+Structure :
+
+Root (App)
+ ├── Navbar (Header)
+ │    └── SearchGroup
+ │         ├── Input
+ │         └── Button
+ ├── LayoutContainer (Main)
+ │    ├── VideoContent (Left Column)
+ │    │    ├── Player
+ │    │    └── MetaData
+ │    └── Recommendations (Right Column)
+ │         ├── VideoCard
+ │         └── VideoCard (Repeated)
+ └── Sidebar (Nav)

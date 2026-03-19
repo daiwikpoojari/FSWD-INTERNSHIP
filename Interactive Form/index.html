@@ -1,0 +1,33 @@
+<!--Assignment of 2nd March-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="mainForm">
+            <h2>Create Account</h2>
+            
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username">
+                <p class="error" id="userError"></p>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" id="email">
+                <p class="error" id="emailError"></p>
+            </div>
+
+            <button type="submit">Register</button>
+            <p id="successMessage" class="success-hidden">Form submitted successfully!</p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

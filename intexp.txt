@@ -1,0 +1,29 @@
+Assignment of 9th Feb :
+
+Internet Explorer
+
+       [ CLIENT ]                                [ SERVER ]
+   (Web Browser/User)                        (Data/Website Host)
+           |                                         ^
+           |          1. HTTP Request                |
+           | --------------------------------------> |
+           |                                         |
+           |                                         |
+           |          2. HTTP Response               |
+           | <-------------------------------------- |
+           |                                         |
+           v                                         |
+
+
+Client-Server Architecture & Flow
+The Client-Server model is a distributed structure that partitions tasks between service providers (servers) and service requesters (clients).
+* The Client: Your device (laptop/phone) and browser. It initiates requests for data.
+* The Server: A powerful computer that "serves" content. It stores website files and sends them to clients upon request.
+
+
+Tracing a Website Visit:
+1. DNS Lookup: The browser asks a DNS server for the IP address associated with the URL.
+2. TCP Handshake: The client establishes a stable connection with the server.
+3. HTTP Request: The browser sends a formal request for the website's files.
+4. Server Response: The server processes the request and sends the data back in packets.
+5. Rendering: The browser assembles the code and displays the visual website.
