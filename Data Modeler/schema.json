@@ -1,0 +1,16 @@
+{
+  "collections": {
+    "users": {
+      "fields": ["_id", "username", "email", "password_hash", "profile_bio"]
+    },
+    "posts": {
+      "fields": ["_id", "title", "slug", "content", "author", "tags", "created_at"],
+      "denormalized_fields": ["author.username"],
+      "indexes": ["slug_1", "tags_1"]
+    },
+    "comments": {
+      "fields": ["_id", "post_id", "user_id", "text", "timestamp"],
+      "relationships": { "post_id": "references posts._id" }
+    }
+  }
+}

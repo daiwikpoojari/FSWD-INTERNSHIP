@@ -1,0 +1,56 @@
+<!--Assignment of 21st March-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="shop-container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <p>Category</p>
+                <button>Electronics</button>
+                <button>Fashion</button>
+                <button>Home</button>
+            </div>
+        </aside>
+
+        <main class="product-grid">
+            <div class="product-card">
+                <img src="https://watchbranding.com/app/uploads/2023/10/MIN-ST-2SLBK.jpg" alt="Product">
+                <div class="card-info">
+                    <h4>Classic Watch</h4>
+                    <p class="price">$120.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="electronics">
+                <img src="https://t3.ftcdn.net/jpg/05/91/18/02/360_F_591180287_OIqyBTBWiDNOdUIAbb8R2D0Q1Qf1kq3C.jpg" alt="Smartphone">
+                <div class="card-info">
+                    <h4>Pro Smartphone</h4>
+                    <p class="price">$899</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fashion">
+                 <img src="https://img.freepik.com/premium-photo/woven-formal-casual-shirt-ss25-check-shirt-design-mockup-boys-with-white-background_1297091-489.jpg" alt="Cotton Shirt">
+                 <div class="card-info">
+                    <h4>Casual Shirt</h4>
+                    <p class="price">$45</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+    
+         </main>
+     </div>
+
+</body>
+</html>
